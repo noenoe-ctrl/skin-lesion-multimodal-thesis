@@ -1,0 +1,45 @@
+# Publication allowlist: code, notebooks, documentation and aggregate results.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/experiments/
+!/dataset/
+!/results/
+
+/dataset/*
+!/dataset/*.ipynb
+
+/experiments/*
+!/experiments/patient_split_v1/
+/experiments/patient_split_v1/*
+!/experiments/patient_split_v1/.gitignore
+!/experiments/patient_split_v1/*.py
+!/experiments/patient_split_v1/*.md
+!/experiments/patient_split_v1/requirements.txt
+!/experiments/patient_split_v1/14_Protocolo_Paciente_TrainOnly.ipynb
+
+# Never publish runtime environments, raw clinical rows or cached features.
+**/.venv/
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/node_modules/
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.npy
+**/*.npz
+**/*.pt
+**/*.joblib
+
+# Published results are intentionally limited to aggregates.
+/results/*
+!/results/patient_split_v1/
+/results/patient_split_v1/*
+!/results/patient_split_v1/README.md
+!/results/patient_split_v1/*.md
+!/results/patient_split_v1/*_summary.csv
+!/results/patient_split_v1/*_metrics_per_seed.csv
+!/results/patient_split_v1/analysis_summary.json
+!/results/patient_split_v1/Resultados_Tesis_Todos_Modelos.xlsx
