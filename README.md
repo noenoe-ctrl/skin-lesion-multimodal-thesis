@@ -22,7 +22,7 @@ se limita al dataset y a los modelos evaluados.
 
 ## Dónde empezar
 
-- [Protocolo, respuesta provisional para el profesor y referencias](experiments/patient_split_v1/README.md).
+- [Protocolo, respuesta provisional y referencias](experiments/patient_split_v1/README.md).
 - [Resultados completos y tablas para revisar](results/patient_split_v1/README.md).
 - [Plan de la extensión de metadata sola](experiments/patient_split_v1/METADATA_BASELINE_TESIS.md).
 - `dataset/01_...ipynb` a `13_...ipynb`: notebooks históricos, conservados
@@ -35,7 +35,7 @@ se limita al dataset y a los modelos evaluados.
 El repositorio contiene código, documentación, notebooks y resultados
 agregados. Las imágenes, metadata original, caches visuales, filas clínicas,
 predicciones por imagen, checkpoints y entornos locales se mantienen fuera
-de Git. La tesis PDF tampoco se incluye en esta selección.
+de Git.
 
 Obtener PAD-UFES-20 desde su distribución original y respetar sus condiciones:
 [artículo del dataset](https://doi.org/10.1016/j.dib.2020.106221).
